@@ -1,0 +1,48 @@
+{
+  "name": "ts-week9",
+  "version": "1.0.0",
+  "description": "Asincronía",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest --watchAll --coverage",
+    "test:prod": "jest --watchAll --coverage --watchAll=false",
+    "start": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Cristian Martí",
+  "license": "ISC",
+  "homepage": "https://github.com/XistriXostri/week-8#readme",
+  "prettier": {
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.2",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "@jest/types": "^29.3.1",
+    "jest": "^29.3.1",
+    "prettier": "^2.8.0"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  }
+}
