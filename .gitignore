@@ -1,4 +1,5 @@
 .vscode/
+dist/**/*.js
 
 .DS_Store
 # Logs

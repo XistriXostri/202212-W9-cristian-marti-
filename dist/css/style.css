@@ -1,0 +1,72 @@
+:root {
+  --black: #140f07;
+  --yellow: #ffcb05;
+  --light-blue: #2a75bb;
+  --yellow-shadow: #c7a008;
+  --dark-blue: #3c5aa6;
+}
+
+html {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  color: var(--black);
+}
+
+body {
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+
+.pokemon-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 4rem;
+  background-color: var(--yellow);
+  border: 2px solid var(--yellow-shadow);
+  border-radius: 10px;
+  box-shadow: var(--dark-blue) 2px 2px 5px;
+}
+
+p {
+  font-size: large;
+}
+
+.buttons-block {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttons-block button {
+  padding: 20px 40px;
+  background-color: var(--light-blue);
+  color: var(--yellow);
+  border: 1px solid var(--light-blue);
+  box-shadow: var(--dark-blue) 2px 2px 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
